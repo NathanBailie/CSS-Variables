@@ -13,6 +13,11 @@
     --spacingInputName-color: #47b96a;
     --blurInputName-color: #7b72ff;
     --colorInputName-color: #ffee72;
+    
+    /* for change by inputs */
+    --spacing: 5px;
+    --blur: 0px;
+    --color: #6b3270;
 }
 
 .app {
@@ -28,6 +33,11 @@
     color: var(--title-color);
     margin-bottom: 30px;
     font-size: var(--title-fontSize);
+}
+
+.colored {
+    color: var(--color);
+    font-weight: bolder;
 }
 
 .inputWrapper {
@@ -84,6 +94,11 @@
     height: 100%;
     object-fit: contain;
     border-radius: 5px;
+    
+    /* filters */
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background: var(--color);
 }
 
 
